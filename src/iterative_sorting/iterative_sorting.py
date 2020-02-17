@@ -16,7 +16,6 @@ def selection_sort( arr ):
             
     return arr
 
-
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
     for i in range(0, len(arr) - 1):
