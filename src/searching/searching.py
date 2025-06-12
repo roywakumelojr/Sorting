@@ -2,7 +2,9 @@
 def linear_search(arr, target):
   
   # TO-DO: add missing code
-
+   for i in range (0, len(arr) ):
+     if arr[i] == target:
+       return i
    return -1   # not found
 
 
@@ -16,7 +18,14 @@ def binary_search(arr, target):
   high = len(arr)-1
 
   # TO-DO: add missing code
-
+  while low <= high:
+    array_middle = (low + high) // 2
+    if target < arr[array_middle]:
+      high = array_middle - 1
+    elif target > arr[array_middle]:
+      low = array_middle + 1
+    else:
+      return array_middle
   return -1 # not found
 
 
